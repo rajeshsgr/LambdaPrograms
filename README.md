@@ -1,1 +1,3 @@
 # LambdaPrograms
+
+![Screenshot](GroupBy.png)

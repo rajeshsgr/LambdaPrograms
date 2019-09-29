@@ -90,6 +90,11 @@ public class GroupbyExample {
 	    	 System.out.println("\nMinimum Age in group :-"+ minByAge.get().getAge());
 	     }
 	     
+	     double employeeSalarySum= employeeList
+	      .stream().distinct().collect(Collectors.summingDouble(Employee::getSalary));
+	     
+	     
+	     System.out.println("\nTotal Salary  :-"+ currencyFormat.format(employeeSalarySum) );
 	     
 	}
 
